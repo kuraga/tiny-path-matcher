@@ -1,0 +1,54 @@
+{
+  "name": "tiny-path-matcher",
+  "version": "0.0.0",
+  "license": "MIT",
+  "description": "Tiny hierarchical path (tree node) matcher.",
+  "keywords": [
+    "match",
+    "tree",
+    "node",
+    "path",
+    "route",
+    "router",
+    "string",
+    "regular expression",
+    "regexp",
+    "ES2018",
+    "ECMAScript 2018"
+  ],
+  "homepage": "https://github.com/kuraga/tiny-path-matcher",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kuraga/tiny-path-matcher.git"
+  },
+  "author": {
+    "name": "Alexander Kurakin",
+    "email": "kuraga333@mail.ru"
+  },
+  "bugs": {
+    "url": "https://github.com/kuraga/tiny-path-matcher/issues",
+    "email": "kuraga333@mail.ru"
+  },
+  "main": "index.mjs",
+  "module": "index.mjs",
+  "jsnext:main": "index.mjs",
+  "browser": "index.mjs",
+  "engines": {
+    "node": ">= 8.5.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^5.6.1",
+    "esm": "^3.0.84",
+    "nyc": "^13.0.1",
+    "tman": "^1.8.1"
+  },
+  "scripts": {
+    "test": "node --harmony scripts/test.js",
+    "cover": "nyc npm run test",
+    "lint": "eslint $(git ls-files '*.js' '*.mjs')",
+    "release-patch": "git checkout master && npm version patch && git push origin master --tags && npm publish",
+    "release-minor": "git checkout master && npm version minor && git push origin master --tags && npm publish",
+    "release-major": "git checkout m0aster && npm version major && git push origin master --tags && npm publish"
+  }
+}

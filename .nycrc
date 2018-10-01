@@ -1,0 +1,11 @@
+{
+  "reporter": [
+    "html",
+    "text"
+  ],
+   "extension": [
+    ".js",
+    ".mjs"
+   ],
+  "report-dir": "./coverage"
+}
